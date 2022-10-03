@@ -14,6 +14,12 @@ class Stack:
     def show_stack(self):
         print(self.collection)
 
+    def check_empty(self):
+        if len(self.collection) == 0:
+            print("Stack is empty")
+        else:
+            print("Stack is not empty")
+
 
 st = Stack()
 st.take_away()  # -> Stack is already empty
@@ -25,3 +31,5 @@ st.put(4)
 st.show_stack()  # -> [4, 8, 3]
 st.take_away()
 st.show_stack()  # -> [8, 3]
+
+st.check_empty()  # -> Stack is not empty
