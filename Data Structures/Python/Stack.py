@@ -2,7 +2,7 @@ class Stack:
     def __init__(self):
         self.collection = []
 
-    def is_empty(self) -> bool:
+    def check_empty(self) -> bool:
         # This function check is Stack is empty
         return self.collection == []
 
@@ -28,4 +28,7 @@ st.put(8)
 st.put(4)
 st.show_stack()  # -> [4, 8, 3]
 st.take_away()
-st.show_stack()  # -> [8, 3] 
+st.show_stack()  # -> [8, 3]
+
+if not st.check_empty:
+    st.take_away()  # instead of exceptions block
