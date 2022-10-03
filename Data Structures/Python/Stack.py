@@ -15,8 +15,8 @@ class Stack:
         print(self.collection)
 
     def check_empty(self):
-        check = '' if len(self.collection) == 0 else 'not'
-        print(f"Stack is {check} empty")
+        check = '' if len(self.collection) == 0 else 'not '
+        print(f"Stack is {check}empty")
 
 
 st = Stack()
